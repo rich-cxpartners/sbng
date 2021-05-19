@@ -1,0 +1,8 @@
+<form [formGroup]="userForm">
+    <sb-form-item label="Test label" required="true">
+        <mat-checkbox formControlName="checked"></mat-checkbox>
+        <mat-error *ngIf="userForm.controls.checked.invalid">{{getErrorMessage()}}</mat-error>
+        <mat-error *ngIf="userForm.controls.checked.invalid" class="warning">{{getWarningMessage()}}</mat-error>
+        <mat-error *ngIf="userForm.controls.checked.invalid" class="information">{{getInformationMessage()}}</mat-error>
+    </sb-form-item>
+</form>

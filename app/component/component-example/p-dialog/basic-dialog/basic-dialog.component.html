@@ -1,0 +1,12 @@
+<button mat-raised-button color="primary" (click)="showDialog()">Open dialog</button>
+
+<!-- autoZIndex is set here to avoid a zindex calculated by JS. -->
+<p-dialog header="Basic dialog" [(visible)]="display" [modal]="true" [autoZIndex]="false">
+  <div style="min-height: 200px; width: 300px;">
+    <p>Showing basic dialog content.</p>
+  </div>
+  <ng-template pTemplate="footer">
+    <button mat-raised-button (click)="display=false">No</button>
+    <button mat-raised-button color="primary" (click)="display=false">Yes</button>
+  </ng-template>
+</p-dialog>

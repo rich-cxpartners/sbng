@@ -1,0 +1,5 @@
+<mat-form-field>
+  <mat-select [formControl]="cars" multiple>
+    <mat-option *ngFor="let car of carList" [value]="car.value">{{car.label}}</mat-option>
+  </mat-select>
+</mat-form-field>

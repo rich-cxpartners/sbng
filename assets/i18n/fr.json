@@ -1,0 +1,17 @@
+{
+    "hello": "transloco fr",  
+    "dynamic": "transloco {{value}}",
+    "session_timeout": {
+        "title": "Expiration de session",
+        "description": "En raison de l'inactivité, votre session sera prochainement interrompue.",
+        "extend_button": "PROLONGER SESSION"
+    },
+    "error_page": {
+        "title1": "INTERRUPTION",
+        "title2": "DE L'APPLICATION",
+        "header": "Veuillez contacter le support technique.",
+        "ticket_id_indication": "Merci de communiquer le ticket id suivant :",
+        "apology": "Nous nous excusons pour la gêne occasionnée.",
+        "button": "PAGE D'ACCUEIL"
+    }
+}

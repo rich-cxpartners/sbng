@@ -1,0 +1,12 @@
+<form [formGroup]="userForm">
+  <sb-form-item label="Test label" required="true">
+    <mat-form-field appearance="legacy" floatLabel="never" [hideRequiredMarker]="true">
+      <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Please choose a date" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="userForm.controls.date.invalid">{{getErrorMessage()}}</mat-error>
+      <mat-error *ngIf="userForm.controls.date.invalid" class="warning">{{getWarningMessage()}}</mat-error>
+      <mat-error *ngIf="userForm.controls.date.invalid" class="information">{{getInformationMessage()}}</mat-error>
+    </mat-form-field>
+  </sb-form-item>
+</form>

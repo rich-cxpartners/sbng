@@ -1,0 +1,13 @@
+<form [formGroup]="userForm">
+  <sb-form-item label="Test label" required="true">
+    <mat-form-field appearance="legacy" floatLabel="never"
+      [hideRequiredMarker]="true">
+      <input matInput formControlName="firstName" placeholder="first name" required>
+      <mat-hint>Please fill your first name</mat-hint>
+      <mat-error *ngIf="userForm.controls.firstName.invalid">{{getErrorMessage()}}</mat-error>
+      <mat-error *ngIf="userForm.controls.firstName.invalid">{{getErrorMessage()}}</mat-error>
+      <mat-error *ngIf="userForm.controls.firstName.invalid" class="warning">{{getWarningMessage()}}</mat-error>
+      <mat-error *ngIf="userForm.controls.firstName.invalid" class="information">{{getInformationMessage()}}</mat-error>
+    </mat-form-field>
+  </sb-form-item>
+</form>  

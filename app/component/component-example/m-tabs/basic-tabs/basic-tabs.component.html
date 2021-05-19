@@ -1,0 +1,41 @@
+<mat-tab-group animationDuration="0ms">
+  <mat-tab label="First">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Content tab 1</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The content of the card in tab 1.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Second">
+    Content of tab 2.
+  </mat-tab>
+  <mat-tab label="Third">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Content tab 3</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The content of the card in tab 3.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Fourth (disabled)" [disabled]="true">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Content tab 4</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          The content of the card in tab 4.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

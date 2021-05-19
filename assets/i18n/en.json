@@ -1,0 +1,17 @@
+{
+    "hello": "transloco en",  
+    "dynamic": "transloco {{value}}",
+    "session_timeout": {
+        "title": "Session Timeout",
+        "description": "Due to inactivity, you will soon be logged out.",
+        "extend_button": "EXTEND SESSION"
+    },
+    "error_page": {
+        "title1": "INTERRUPTION",
+        "title2": "OF THE APPLICATION",
+        "header": "Please contact your technical support.",
+        "ticket_id_indication": "Thank you to communicate to them the ticket id :",
+        "apology": "We apologize for the inconvenience.",
+        "button": "GO HOME"
+    }
+}
